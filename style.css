@@ -1,0 +1,106 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navegación */
+header {
+    background: #fff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4a373; /* Tono elegante/boutique */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4a373;
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('ruta-imagen-agave.jpg');
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.btn-primary {
+    background: #d4a373;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+/* Grid de Productos */
+.productos {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Sustentabilidad */
+.info-extra {
+    background: #f9f4ef;
+    padding: 40px;
+    text-align: center;
+}
+
+.promo {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2a9d8f; /* Tono eco-friendly */
+}
